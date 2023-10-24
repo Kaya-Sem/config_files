@@ -15,16 +15,16 @@
                 "openssl-1.1.1w"
               ];
          
-#  hardware.bluetooth.enable = true; # enables support for Bluetooth
-# hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
-#services.blueman.enable = true;
-#services.syncthing.enable = true;
+  hardware.bluetooth.enable = true; # enables support for Bluetooth
+  hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+  services.blueman.enable = true;
+  services.syncthing.enable = true;
 
   # Adds an alias for editing this configfile.
   environment.interactiveShellInit = ''
 
-  alias cnix='nano /home/kayasem/Syncthing/config_repo/configuration.nix'
-  alias nixrebuild='nixos-rebuild switch && reboot'
+  alias cnix='sudo nano /home/kayasem/Syncthing/config_repo/configuration.nix'
+  alias nixrebuild='sudo nixos-rebuild switch'
 
  '';
   
