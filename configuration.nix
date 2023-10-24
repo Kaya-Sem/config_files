@@ -11,27 +11,22 @@
       ./hardware-configuration.nix
     ];
 
-  # Self-added
-#  services = {
-#	syncthing = {
-#
-#	  enable = true;
- # };
-#};
-
               nixpkgs.config.permittedInsecurePackages = [
                 "openssl-1.1.1w"
               ];
          
-
-
+#  hardware.bluetooth.enable = true; # enables support for Bluetooth
+# hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+#services.blueman.enable = true;
+#services.syncthing.enable = true;
 
   # Adds an alias for editing this configfile.
   environment.interactiveShellInit = ''
 
-  alias cnix='cd /etc/nixos; sudo nano configuration.nix'
-  alias nixrebuild='sudo nixos-rebuild switch && reboot'
-  '';
+  alias cnix='nano /home/kayasem/Syncthing/config_repo/configuration.nix'
+  alias nixrebuild='nixos-rebuild switch && reboot'
+
+ '';
   
   # Enable plasma desktop
   services.xserver.displayManager.sddm.enable = true;
@@ -122,16 +117,18 @@
   qbittorrent
   syncthing
   ed
- # exa
-  discord
-  github-desktop
   keepassxc
+  discord
+  # exa
+  
+  github-desktop
   android-studio  
   git
   vscode
+  wget
+
   ncspot
   brave
-  wget
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   ];
 
