@@ -19,6 +19,12 @@
  # };
 #};
 
+              nixpkgs.config.permittedInsecurePackages = [
+                "openssl-1.1.1w"
+              ];
+         
+
+
 
   # Adds an alias for editing this configfile.
   environment.interactiveShellInit = ''
@@ -115,11 +121,15 @@
   syncthingtray
   qbittorrent
   syncthing
+  ed
+ # exa
   discord
+  github-desktop
   keepassxc
   android-studio  
   git
   vscode
+  ncspot
   brave
   wget
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
