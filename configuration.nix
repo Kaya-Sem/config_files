@@ -114,6 +114,7 @@
 
    # util
   tre-command
+  ed
 
   obsidian
   syncthingtray
@@ -124,6 +125,7 @@
   discord
  
    # development
+  jetbrains.idea-ultimate  
   github-desktop
   android-studio  
   git
