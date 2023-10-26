@@ -24,7 +24,7 @@
 
   alias cnix='sudo nano /home/kayasem/Syncthing/config_repo/configuration.nix'
   alias nixrebuild='sudo nixos-rebuild switch'
-
+  alias tree="tre"
  '';
   
   # Enable plasma desktop
