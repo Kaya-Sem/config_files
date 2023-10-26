@@ -19,7 +19,7 @@
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
   
 
-  # Adds an alias for editing this configfile.
+  # aliasses
   environment.interactiveShellInit = ''
 
   alias cnix='sudo nano /home/kayasem/Syncthing/config_repo/configuration.nix'
@@ -129,10 +129,11 @@
   git
   vscode
   wget
+  vim
 
   ncspot
   brave
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+  
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
