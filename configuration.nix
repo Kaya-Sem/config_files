@@ -111,6 +111,10 @@
   # $ nix search wget
 
   environment.systemPackages = with pkgs; [
+
+   # util
+  tre-command
+
   obsidian
   syncthingtray
   qbittorrent
@@ -118,8 +122,8 @@
   ed
   keepassxc
   discord
-  # exa
-  
+ 
+   # development
   github-desktop
   android-studio  
   git
