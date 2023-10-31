@@ -98,6 +98,7 @@
     description = "kaya-sem";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
+    spotify
     # firefox
     #  thunderbird
     ];
@@ -115,6 +116,7 @@
    # util
   tre-command
   ed
+  bc
 
   obsidian
   syncthingtray
@@ -131,7 +133,9 @@
   git
   vscode
   wget
+  python3
   vim
+  gh
 
   ncspot
   brave
