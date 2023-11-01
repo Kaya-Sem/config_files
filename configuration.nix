@@ -119,6 +119,7 @@
   tre-command
   ed
   bc
+  fcron
 
   obsidian
   syncthingtray
