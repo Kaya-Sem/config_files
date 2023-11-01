@@ -99,7 +99,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     spotify
-    # firefox
+    virtualbox
     #  thunderbird
     ];
   };
