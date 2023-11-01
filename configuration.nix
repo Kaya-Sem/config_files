@@ -98,9 +98,10 @@
     description = "kaya-sem";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
+    mullvad
     spotify
     virtualbox
-    #  thunderbird
+   
     ];
   };
 
