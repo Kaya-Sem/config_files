@@ -98,6 +98,7 @@
     description = "kaya-sem";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
+    spotdl
     mullvad
     spotify
     virtualbox
