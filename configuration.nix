@@ -101,6 +101,7 @@
     spotdl
     mullvad
     spotify
+    postgresql
     virtualbox
    
     ];
@@ -119,7 +120,7 @@
   tre-command
   ed
   bc
-  fcron
+  pgadmin4
 
   obsidian
   syncthingtray
