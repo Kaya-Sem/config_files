@@ -117,6 +117,7 @@
   ed
   bc
   pgadmin4
+  pgmodeler
 
   obsidian
   syncthingtray
