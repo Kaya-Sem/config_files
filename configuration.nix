@@ -99,7 +99,7 @@
     spotify
     postgresql
     virtualbox
-   libsForQt5.yakuake   
+    libsForQt5.yakuake   
     ];
   };
 
@@ -117,7 +117,6 @@
   ed
   bc
   pgadmin4
-  pgmodeler
 
   obsidian
   syncthingtray
@@ -127,7 +126,7 @@
   keepassxc
   discord
  
-   # development
+  # development
   jetbrains.idea-ultimate  
   github-desktop
   android-studio  
