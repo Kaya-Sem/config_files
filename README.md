@@ -12,4 +12,4 @@ Symlink command in /etc/nixos
 `~/.config/ncspot/config.toml` default ncspot config file spot
 
 ---
-$$\sum_{k=0}^{\infty}a_k\frac{x^k}{k!}$$
+
