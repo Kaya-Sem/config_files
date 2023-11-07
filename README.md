@@ -10,3 +10,6 @@ Symlink command in /etc/nixos
 ---
 
 `~/.config/ncspot/config.toml` default ncspot config file spot
+
+---
+
