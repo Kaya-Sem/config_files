@@ -14,10 +14,13 @@
               nixpkgs.config.permittedInsecurePackages = [
                 "openssl-1.1.1w"
               ];
-         
-  hardware.bluetooth.enable = true; # enables support for Bluetooth
-  hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
-  
+
+
+  # Bluetooth
+hardware.bluetooth.enable = true; # enables support for Bluetooth
+hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+
+
 
   # aliasses
   environment.interactiveShellInit = ''
@@ -27,15 +30,19 @@
   alias tree="tre"
  '';
   
-  # Enable plasma desktop
+  # desktop environment
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
 
+  services.xserver.desktopManager.xfce.enable = false;
 
+
+  services.mullvad-vpn.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+   boot.loader.grub.useOSProber = true;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -95,10 +102,11 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     spotdl
-    mullvad
+    mullvad-vpn
     spotify
     postgresql
     virtualbox
+   tor-browser-bundle-bin
     libsForQt5.yakuake   
     ];
   };
@@ -117,6 +125,7 @@
   ed
   bc
   pgadmin4
+  wget
 
   obsidian
   syncthingtray
@@ -132,15 +141,55 @@
   android-studio  
   git
   vscode
-  wget
   python3
   vim
+  tetex
   gh
 
+  usbimager
   ncspot
   brave
   
   ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
