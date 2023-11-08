@@ -126,6 +126,7 @@ hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth control
   bc
   pgadmin4
   wget
+  unzip
 
   obsidian
   syncthingtray
