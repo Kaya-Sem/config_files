@@ -17,17 +17,21 @@
 
 
   # Bluetooth
-hardware.bluetooth.enable = true; # enables support for Bluetooth
-hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+  hardware.bluetooth.enable = true; # enables support for Bluetooth
+  hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
 
 
 
-  # aliasses
+  
   environment.interactiveShellInit = ''
 
-  alias cnix='sudo nano /home/kayasem/Syncthing/config_repo/configuration.nix'
+
+  # aliases
+  alias cnix='code ~/Syncthing/config_repo/configuration.nix'
   alias nixrebuild='sudo nixos-rebuild switch'
   alias tree="tre"
+
+  export PS1="\w\ "
  '';
   
   # desktop environment
@@ -77,7 +81,7 @@ hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth control
 
   # Enable sound with pipewire.
   sound.enable = true;
-  hardware.pulseaudio.enable = false;
+  hardware.pulseaudio.enable = true;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -106,7 +110,7 @@ hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth control
     spotify
     postgresql
     virtualbox
-   tor-browser-bundle-bin
+    tor-browser-bundle-bin
     libsForQt5.yakuake   
     ];
   };
@@ -146,6 +150,7 @@ hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth control
   vim
   tetex
   gh
+  direnv
 
   usbimager
   ncspot
