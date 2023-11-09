@@ -30,6 +30,8 @@
   alias cnix='code ~/Syncthing/config_repo/configuration.nix'
   alias nixrebuild='sudo nixos-rebuild switch'
   alias tree="tre"
+  alias cleanup="nix-collect-garbage -d"
+
   export PS1="\w\ "
  '';
   
