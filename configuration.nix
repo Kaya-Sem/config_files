@@ -30,9 +30,10 @@
   alias cnix='code ~/Syncthing/config_repo/configuration.nix'
   alias nixrebuild='sudo nixos-rebuild switch'
   alias tree="tre"
-  alias cleanup="nix-collect-garbage -d"
+  alias cleanup="nix-collect-garbage -d; $ nix-env --delete-generations old"
+  alias nano="vim"
 
-  export PS1="\w\ "
+  export PS1="\w\ > "
  '';
   
   # desktop environment
