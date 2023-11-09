@@ -16,7 +16,7 @@
               ];
 
 
-  # Bluetooth
+
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
 
@@ -30,7 +30,6 @@
   alias cnix='code ~/Syncthing/config_repo/configuration.nix'
   alias nixrebuild='sudo nixos-rebuild switch'
   alias tree="tre"
-
   export PS1="\w\ "
  '';
   
@@ -46,7 +45,7 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-   boot.loader.grub.useOSProber = true;
+  boot.loader.grub.useOSProber = true;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -81,7 +80,7 @@
 
   # Enable sound with pipewire.
   sound.enable = true;
-  hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -132,6 +131,7 @@
   wget
   unzip
 
+  # common
   obsidian
   syncthingtray
   qbittorrent
@@ -139,7 +139,8 @@
   ed
   keepassxc
   discord
- 
+  brave
+
   # development
   jetbrains.idea-ultimate  
   github-desktop
@@ -148,13 +149,12 @@
   vscode
   python3
   vim
-  tetex
   gh
   direnv
 
   usbimager
   ncspot
-  brave
+  
   
   ];
 
