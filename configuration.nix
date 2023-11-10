@@ -154,6 +154,7 @@
   vim
   gh
   direnv
+  kotlin-native
 
   usbimager
   ncspot
