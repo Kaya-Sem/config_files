@@ -126,6 +126,9 @@
 
   environment.systemPackages = with pkgs; [
 
+    # nixos
+      home-manager
+
    # util
   tre-command
   ed
