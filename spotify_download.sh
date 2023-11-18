@@ -1,4 +1,4 @@
-#!/run/current-system/sw/bin/bash
+#!/bin/bash
 
 # Define the download paths
 dailymix1_path="/home/kayasem/Music/spotify_downloads/dailymix_1"  
